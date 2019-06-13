@@ -1,0 +1,66 @@
+﻿@model SoundSharpMVCWithDB.ViewModel.VmMemoRecorder
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>VmMemoRecorder</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Make)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Make)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Model)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Model)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreationDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreationDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PriceExBtw)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PriceExBtw)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BtwPercentage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BtwPercentage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaxMemoCartridgeType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaxMemoCartridgeType)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.SerialId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

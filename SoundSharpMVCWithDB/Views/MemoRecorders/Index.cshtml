@@ -1,0 +1,63 @@
+﻿@model IEnumerable<SoundSharpMVCWithDB.ViewModel.VmMemoRecorder>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Make)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Model)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreationDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PriceExBtw)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BtwPercentage)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MaxMemoCartridgeType)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Make)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Model)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreationDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PriceExBtw)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BtwPercentage)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaxMemoCartridgeType)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.SerialId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.SerialId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.SerialId })
+        </td>
+    </tr>
+}
+
+</table>

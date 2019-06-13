@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="292650e745674c759ea9a6f65caa1f6e" Name="Diagram1">
+        <EntityTypeShape EntityType="SoundSharpDBModel.AudioDevice" Width="1.5" PointX="0.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SoundSharpDBModel.Category" Width="1.5" PointX="4" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SoundSharpDBModel.CdDiskMan" Width="1.5" PointX="3" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SoundSharpDBModel.MemoRecorder" Width="1.5" PointX="3" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SoundSharpDBModel.Mp3Player" Width="1.5" PointX="6" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SoundSharpDBModel.Track" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SoundSharpDBModel.TrackList" Width="1.5" PointX="3.75" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="SoundSharpDBModel.FK__CdDiskMan__Audio__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="SoundSharpDBModel.FK__MemoRecor__Audio__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="SoundSharpDBModel.FK__Mp3Player__Audio__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="SoundSharpDBModel.FK__Track__Style__398D8EEE" ManuallyRouted="false" />
+        <AssociationConnector Association="SoundSharpDBModel.FK__Mp3Player__Track__4AB81AF0" ManuallyRouted="false" />
+        <AssociationConnector Association="SoundSharpDBModel.TrackListTrack" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
